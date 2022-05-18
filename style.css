@@ -52,6 +52,10 @@ li:hover {
     background: #f3644b;
 }
 
+a {
+    color: whitesmoke;
+}
+
 @media (min-width: 800px) {
     body {
         max-width: 60vw;

@@ -15,15 +15,15 @@
         Áudio não suportado
         </audio> -->
         <audio id="player">
-            <source id="player">
+            <source id="source">
             Áudio não suportado
         </audio>
 
         <div id="controls">
             <p id="currentSong"></p>
             <div class="controls_wrapper">
-                <span>&#9658;</span>
-                <span>&#10074;&#10074;</span>
+                <span onclick="playAudio()">&#9658;</span>
+                <span onclick="pauseAudio()">&#10074;&#10074;</span>
             </div>
             <p>Volume:</p>
             <div class="volume">
@@ -34,16 +34,9 @@
         </div>
 
         <h2>Minhas músicas:</h2>
-        <div id="songList">
-            <ol>
-                <li>bensound-clapandyell.mp3</li>
-                <li>bensound-dance.mp3</li>
-                <li>bensound-funkyelement.mp3</li>
-                <li>bensound-happiness.mp3</li>
-                <li>bensound-happyrock.mp3</li>
-                <li>bensound-thelounge.mp3</li>
-            </ol>
-        </div>
+        <div id="songList"></div>
+        <p>Música: <a href="https://www.bensound.com/" target="_blank">https://www.bensound.com/</a></p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
