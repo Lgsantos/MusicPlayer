@@ -5,44 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="player">
         <img src="headphones.svg" alt="headphones image">
-    </div>
-    <!-- <audio id="player" controls>
+        <!-- <audio id="player" controls>
         <source id="player" src="songs/bensound-clapandyell.mp3">
         Áudio não suportado
-    </audio> -->
-    <audio id="player">
-        <source id="player">
-        Áudio não suportado
-    </audio>
+        </audio> -->
+        <audio id="player">
+            <source id="player">
+            Áudio não suportado
+        </audio>
 
-    <div id="controls">
-        <p id="currentSong"></p>
-        <div class="controls_wrapper">
-            <span>&#9658;</span>
-            <span>&#10074;&#10074;</span>
+        <div id="controls">
+            <p id="currentSong"></p>
+            <div class="controls_wrapper">
+                <span>&#9658;</span>
+                <span>&#10074;&#10074;</span>
+            </div>
+            <p>Volume:</p>
+            <div class="volume">
+                <span>-</span>
+                <input type="range" name="" id="volumeSlider" min="0" max="1" step="0.1">
+                <span>+</span>
+            </div>
         </div>
-        <p>Volume:</p>
-        <div class="volume">
-            <span>-</span>
-            <input type="range" name="" id="volumeSlider" min="0" max="1" step="0.1">
-            <span>+</span>
-        </div>
-    </div>
 
-    <h2>Minhas músicas:</h2>
-    <div id="songList">
-        <ol>
-            <li>bensound-clapandyell.mp3</li>
-            <li>bensound-dance.mp3</li>
-            <li>bensound-funkyelement.mp3</li>
-            <li>bensound-happiness.mp3</li>
-            <li>bensound-happyrock.mp3</li>
-            <li>bensound-thelounge.mp3</li>
-        </ol>
+        <h2>Minhas músicas:</h2>
+        <div id="songList">
+            <ol>
+                <li>bensound-clapandyell.mp3</li>
+                <li>bensound-dance.mp3</li>
+                <li>bensound-funkyelement.mp3</li>
+                <li>bensound-happiness.mp3</li>
+                <li>bensound-happyrock.mp3</li>
+                <li>bensound-thelounge.mp3</li>
+            </ol>
+        </div>
     </div>
 </body>
 </html>
