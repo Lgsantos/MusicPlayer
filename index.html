@@ -9,15 +9,17 @@
 </head>
 <body>
     <div class="player">
-        <img src="headphones.svg" alt="headphones image">
+        <img src="headphones.svg" alt="headphones image" id="headphones">
         <!-- <audio id="player" controls>
         <source id="player" src="songs/bensound-clapandyell.mp3">
         Áudio não suportado
         </audio> -->
-        <audio id="player">
+        <audio id="player" ontimeupdate="updateProgress()">
             <source id="source">
             Áudio não suportado
         </audio>
+
+        <progress id="progress" value="0" max="100"></progress>
 
         <div id="controls">
             <p id="currentSong"></p>
