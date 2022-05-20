@@ -7,6 +7,13 @@ const songs = [
     "bensound-thelounge.mp3"
 ];
 
+const images = [
+    "pexels-kendall-hoopes-1204060.jpg",
+    "pexels-luis-quintero-2774565.jpg",
+    "pexels-lukas-1309599.jpg",
+    "pexels-wolfgang-2747448.jpg"
+];
+
 const player = document.getElementById("player");
 
 function createSongList () {
@@ -61,5 +68,9 @@ function updateProgress () {
     if (player.currentTime > 0) {
         const progressBar = document.getElementById("progress");
     progressBar.value = (player.currentTime / player.duration) * 100;
+
+    const randomColor = "#" + Math.floor(Math.random() * 999999);
+
+    document.querySelector(".player").style = `background:radial-gradient(circle at 0% 0%, rgba(255,0,0,1), ${randomColor} 75%)`;
     }
 }
