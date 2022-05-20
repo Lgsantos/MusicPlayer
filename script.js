@@ -37,6 +37,7 @@ for (const link of links) {
 
 function setSong(e) {
     document.getElementById("headphones").classList.remove("pulse");
+
     const source = document.getElementById("source");
     source.src = "songs/" + e.target.innerText;
 
@@ -50,11 +51,13 @@ function setSong(e) {
 function playAudio() {
     if (player.readyState) {
         player.play();
+        document.getElementById("headphones").classList.add("pulse");
     };
 }
 
 function pauseAudio() {
     player.pause();
+    document.getElementById("headphones").classList.remove("pulse");
 }
 
 const slider = document.getElementById("volumeSlider");
