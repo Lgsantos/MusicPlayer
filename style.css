@@ -68,18 +68,19 @@ progress {
 
 .pulse {
     animation: pulse;
-    animation-duration: 0.4s;
+    animation-duration: 2.4s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes pulse {
     from {
-        transform: scale(1);
+        transform: rotate(0deg) scale(1) translateX(0px);
     }
     50% {
-        transform: scale(0.9);
+        transform: rotate(5deg) scale(0.9) translateX(20px);
     }
     to {
-        transform: scale(1);
+        transform: rotate(-5deg) scale(1) translateX(-20px);
     }
 }
 
